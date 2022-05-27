@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                 </Paper>
               </Grid>
               <Grid item xs={12} sm={12} md={5} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack}>
+                <Box className={styles.boxblack}>
                   <Typography
                     align="center"
                     variant="h4"
@@ -69,14 +69,14 @@ const Home: NextPage = () => {
                   >
                     CONCEPT
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
             </Grid>
           </SwiperSlide>
           <SwiperSlide>
             <Grid container spacing={1}>
               <Grid item xs={12} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack}>
+                <Box className={styles.boxblack}>
                   <Typography
                     align="center"
                     variant="h4"
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
                   >
                     まずはじめに
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
               <Grid item xs={12} md={6} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
           <SwiperSlide>
             <Grid container spacing={1}>
               <Grid item xs={12} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -233,10 +233,10 @@ const Home: NextPage = () => {
                   >
                     サイトイメージ
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
-              <Grid item xs={6} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+              <Grid item xs={12} sm={6} alignItems="center">
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -244,10 +244,10 @@ const Home: NextPage = () => {
                   >
                     投票詳細ページ
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
-              <Grid item xs={6} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+              <Grid item xs={12} sm={6} alignItems="center">
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -255,7 +255,7 @@ const Home: NextPage = () => {
                   >
                     投票結果
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
               <Grid item xs={12} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
@@ -281,7 +281,7 @@ const Home: NextPage = () => {
                   </Typography>
                 </Paper>
               </Grid>
-              <Grid item xs={6} alignItems="center">
+              <Grid item xs={12} sm={6} alignItems="center">
                 <Paper elevation={0} className={styles.paperblack10}>
                   <Typography
                     align="center"
@@ -292,7 +292,7 @@ const Home: NextPage = () => {
                   </Typography>
                 </Paper>
               </Grid>
-              <Grid item xs={6} alignItems="center">
+              <Grid item xs={12} sm={6} alignItems="center">
                 <Paper elevation={0} className={styles.paperblack10}>
                   <Typography
                     align="center"
@@ -310,6 +310,43 @@ const Home: NextPage = () => {
                     alt=""
                     className={styles.image}
                   />
+                </Paper>
+              </Grid>
+            </Grid>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Grid container spacing={1}>
+              <Grid item xs={12} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    comming soon
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    七夕 (2022年7月7日)
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    サービス開始予定
+                  </Typography>
                 </Paper>
               </Grid>
             </Grid>

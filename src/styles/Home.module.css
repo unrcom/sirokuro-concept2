@@ -160,6 +160,12 @@
   margin: 20px;
 }
 
+.boxblack10 {
+  background: black;
+  padding: 10px;
+  margin: 0px;
+}
+
 .resizeimage img {
   width: 80vw;
 }
