@@ -129,6 +129,11 @@
   text-align: center;
 }
 
+.image40 {
+  text-align: center;
+  margin: 40px;
+}
+
 .itemcenter {
   justify-self: auto;
 }

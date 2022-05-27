@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                     <img
                       src="concept-image1.png"
                       alt=""
-                      className={styles.image}
+                      className={styles.image40}
                     />
                   </div>
                 </Paper>
@@ -327,7 +327,7 @@ const Home: NextPage = () => {
                   </Typography>
                 </Paper>
               </Grid>
-              <Grid item xs={6} alignItems="center">
+              <Grid item xs={12} sm={6} alignItems="center">
                 <Paper elevation={0} className={styles.paperblack10}>
                   <Typography
                     align="center"
@@ -338,7 +338,7 @@ const Home: NextPage = () => {
                   </Typography>
                 </Paper>
               </Grid>
-              <Grid item xs={6} alignItems="center">
+              <Grid item xs={12} sm={6} alignItems="center">
                 <Paper elevation={0} className={styles.paperblack10}>
                   <Typography
                     align="center"
