@@ -271,7 +271,7 @@ const Home: NextPage = () => {
           <SwiperSlide>
             <Grid container spacing={1}>
               <Grid item xs={12} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -279,10 +279,10 @@ const Home: NextPage = () => {
                   >
                     サイトイメージ
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -290,10 +290,10 @@ const Home: NextPage = () => {
                   >
                     投票詳細ページ
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -301,7 +301,7 @@ const Home: NextPage = () => {
                   >
                     コメント・リプライ
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
               <Grid item xs={12} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
@@ -317,7 +317,7 @@ const Home: NextPage = () => {
           <SwiperSlide>
             <Grid container spacing={1}>
               <Grid item xs={12} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -325,10 +325,10 @@ const Home: NextPage = () => {
                   >
                     comming soon
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -336,10 +336,10 @@ const Home: NextPage = () => {
                   >
                     七夕 (2022年7月7日)
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Paper elevation={0} className={styles.paperblack10}>
+                <Box className={styles.boxblack10}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -347,7 +347,7 @@ const Home: NextPage = () => {
                   >
                     サービス開始予定
                   </Typography>
-                </Paper>
+                </Box>
               </Grid>
             </Grid>
           </SwiperSlide>{" "}
