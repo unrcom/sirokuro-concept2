@@ -26,9 +26,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header></header>
-      {/* <main className={styles.main}> */}
-      {/* <h1 className={styles.title}>Welcome to sirokuro (CONCEPT) .site</h1> */}
-      <main>
+      <main className={styles.main}>
+        {/* <main> */}
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={50}
@@ -49,58 +48,125 @@ const Home: NextPage = () => {
         >
           {/* {items.map((banneritem, index) => { */}
           <SwiperSlide>
-            <h1 className={styles.title}>
-              Welcome to sirokuro (CONCEPT) .site
-            </h1>
+            <Grid container spacing={1}>
+              <Grid item xs={12} sm={12} md={7} alignItems="center">
+                <Paper elevation={0} className={styles.paperwhite}>
+                  <Typography
+                    align="center"
+                    variant="h3"
+                    className={styles.textblack}
+                  >
+                    sirokuro.site
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} sm={12} md={5} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack}>
+                  <Typography
+                    align="center"
+                    variant="h4"
+                    className={styles.textwhite}
+                  >
+                    CONCEPT
+                  </Typography>
+                </Paper>
+              </Grid>
+            </Grid>
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              sx={{
-                height: 25,
-                backgroundColor: "black",
-              }}
-            >
-              <h3 className={styles.textwhite}>まずはじめに</h3>
-            </Box>
-            <Box
-              sx={{
-                height: 200,
-              }}
-            >
-              <img src="concept-image1.png" alt="" />
-            </Box>
-            <Box
-              sx={{
-                height: 100,
-                backgroundColor: "black",
-              }}
-            >
-              <h5 className={styles.textwhite}>POの企画書文書</h5>
-            </Box>
+            <Grid container spacing={1}>
+              <Grid item xs={12} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack}>
+                  <Typography
+                    align="center"
+                    variant="h4"
+                    className={styles.textwhite}
+                  >
+                    まずはじめに
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} md={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperwhitecenter}>
+                  <div className={styles.resizeimage}>
+                    <img
+                      src="concept-image1.png"
+                      alt=""
+                      className={styles.image}
+                    />
+                  </div>
+                </Paper>
+              </Grid>{" "}
+              <Grid item xs={12} alignItems="center">
+                <Box className={styles.boxblack}>
+                  {/* <Paper elevation={0} className={styles.paperblack}> */}
+                  <Typography
+                    align="left"
+                    variant="body1"
+                    className={styles.textwhite}
+                  >
+                    物を買う時はもちろん、自分の意見は少数派なのか多数派なのか、何かを決断する時、知りたくなるはずです。
+                  </Typography>
+                  <Typography
+                    align="left"
+                    variant="body1"
+                    className={styles.textwhite}
+                  >
+                    リモートでの活動が多くなった時代に「誰かに聞きたい!」欲求を満たすことのできたらというのが、このサイトの企画の発端です。
+                  </Typography>
+                  {/* </Paper> */}
+                </Box>
+              </Grid>
+            </Grid>
           </SwiperSlide>
           <SwiperSlide>
-            <Box
-              sx={{
-                height: 25,
-              }}
-            >
-              <h3 className={styles.textblack}>何か決断するとき</h3>
-            </Box>
-            <Box
-              sx={{
-                height: 100,
-                backgroundColor: "black",
-              }}
-            >
-              <h5 className={styles.textwhite}>POの企画書文書</h5>
-            </Box>
-            <Box
-              sx={{
-                height: 400,
-              }}
-            >
-              <img src="concept-image2.png" alt="" />
-            </Box>
+            <Grid container spacing={1}>
+              <Grid item xs={12} alignItems="center">
+                <Paper elevation={0} className={styles.paperwhite}>
+                  <Typography align="center" variant="h4">
+                    何か決断するとき
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} alignItems="center">
+                <Box className={styles.boxblack}>
+                  {/* <Paper elevation={0} className={styles.paperblack}> */}
+                  <Typography
+                    align="left"
+                    variant="body1"
+                    className={styles.textwhite}
+                  >
+                    人間は生活していく上で、「朝何を食べよう」から始まり、常に何かをセレクトしています。
+                  </Typography>
+                  <Typography
+                    align="left"
+                    variant="body1"
+                    className={styles.textwhite}
+                  >
+                    日々何かを決断しているワケですが、大きく分けて2属性あるのかなと思います。
+                  </Typography>
+                  {/* </Paper> */}
+                </Box>
+              </Grid>
+              <Grid item xs={12} md={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperwhitecenter}>
+                  <img
+                    src="concept-image2-1.png"
+                    alt=""
+                    className={styles.image}
+                  />
+                </Paper>
+              </Grid>
+              <Grid item xs={12} md={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperwhitecenter}>
+                  <img
+                    src="concept-image2-2.png"
+                    alt=""
+                    className={styles.image}
+                  />
+                </Paper>
+              </Grid>
+            </Grid>
           </SwiperSlide>{" "}
           <SwiperSlide>
             <Grid container spacing={1}>
@@ -112,21 +178,13 @@ const Home: NextPage = () => {
                 </Paper>
               </Grid>
               <Grid item xs={12} alignItems="center">
-                <Box
-                  sx={{
-                    // height: 100,
-                    backgroundColor: "black",
-                    // padding: 30px,
-                  }}
-                  className={styles.boxblack}
-                >
+                <Box className={styles.boxblack}>
                   {/* <Paper elevation={0} className={styles.paperblack}> */}
                   <Typography
                     align="left"
                     variant="body1"
                     className={styles.textwhite}
                   >
-                    {/* <div> */}
                     現在多くあるのが、商品購買やオークションなど「モノ」のサイト、その他、出会い系、イベントなど「コト」のサイトそれぞれ専門性に特化しています。
                   </Typography>
                   <Typography
@@ -134,8 +192,6 @@ const Home: NextPage = () => {
                     variant="body1"
                     className={styles.textwhite}
                   >
-                    {/* </div>
-                  <div> */}
                     そこで、「コト」「モノ」にとらわれず全てのものを比較でき、個人的に調査比較が簡単にできるサイトがあれば決断の礎になるのではないかと考えます。
                   </Typography>
                   <Typography
@@ -143,9 +199,6 @@ const Home: NextPage = () => {
                     variant="body1"
                     className={styles.textwhite}
                   >
-                    {/* </div> */}
-                    {/* <div>知識欲、決断力を満たしてくれる</div>
-                  <div>それが、白黒サイトです。</div> */}
                     知識欲、決断力を満たしてくれる{" "}
                   </Typography>
                   <Typography
@@ -170,28 +223,96 @@ const Home: NextPage = () => {
             </Grid>
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <Box
-              sx={{
-                height: 25,
-              }}
-            >
-              <h3 className={styles.textblack}>サイトイメージ</h3>
-            </Box>
-            {/* <Box
-            sx={{
-              height: 100,
-              backgroundColor: "black",
-            }}
-          >
-            <h5 className={styles.textwhite}>POの企画書文書</h5>
-          </Box>
-          <Box
-            sx={{
-              height: 300,
-            }}
-          >
-            <img src="concept-image3.png" alt="" />
-          </Box> */}
+            <Grid container spacing={1}>
+              <Grid item xs={12} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    サイトイメージ
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    投票詳細ページ
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    投票結果
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} alignItems="center">
+                <Paper elevation={0} className={styles.paperwhitecenter}>
+                  <img
+                    src="concept-image4-1.png"
+                    alt=""
+                    className={styles.image}
+                  />
+                </Paper>
+              </Grid>
+            </Grid>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Grid container spacing={1}>
+              <Grid item xs={12} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    サイトイメージ
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    投票詳細ページ
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={6} alignItems="center">
+                <Paper elevation={0} className={styles.paperblack10}>
+                  <Typography
+                    align="center"
+                    variant="h5"
+                    className={styles.textwhite}
+                  >
+                    コメント・リプライ
+                  </Typography>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} alignItems="center">
+                <Paper elevation={0} className={styles.paperwhitecenter}>
+                  <img
+                    src="concept-image4-2.png"
+                    alt=""
+                    className={styles.image}
+                  />
+                </Paper>
+              </Grid>
+            </Grid>
           </SwiperSlide>{" "}
         </Swiper>
       </main>
