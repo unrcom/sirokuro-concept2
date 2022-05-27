@@ -13,6 +13,9 @@ import "swiper/css/scrollbar";
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import { Typography } from "@mui/material";
+import { Grid } from "@mui/material";
+import { Paper } from "@mui/material";
 
 const Home: NextPage = () => {
   return (
@@ -96,28 +99,70 @@ const Home: NextPage = () => {
           </Box>
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <Box
-            sx={{
-              height: 25,
-            }}
-          >
-            <h3 className={styles.textblack}>モノでもコトでも</h3>
-          </Box>
-          <Box
-            sx={{
-              height: 100,
-              backgroundColor: "black",
-            }}
-          >
-            <h5 className={styles.textwhite}>POの企画書文書</h5>
-          </Box>
-          <Box
-            sx={{
-              height: 300,
-            }}
-          >
-            <img src="concept-image3.png" alt="" />
-          </Box>
+          <Grid container spacing={1}>
+            <Grid item xs={12} alignItems="center">
+              <Paper elevation={0} className={styles.paperwhite}>
+                <Typography align="center" variant="h4">
+                  モノでもコトでも
+                </Typography>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} alignItems="center">
+              <Paper elevation={0} className={styles.paperblack}>
+                <Typography
+                  align="left"
+                  variant="body1"
+                  className={styles.textwhite}
+                >
+                  {/* <div> */}
+                  現在多くあるのが、商品購買やオークションなど「モノ」のサイト、その他、出会い系、イベントなど「コト」のサイトそれぞれ専門性に特化しています。
+                </Typography>
+                <Typography
+                  align="left"
+                  variant="body1"
+                  className={styles.textwhite}
+                >
+                  {/* </div>
+                  <div> */}
+                  そこで、「コト」「モノ」にとらわれず全てのものを比較でき、個人的に調査比較が簡単にできるサイトがあれば決断の礎になるのではないかと考えます。
+                </Typography>
+                <Typography
+                  align="left"
+                  variant="body1"
+                  className={styles.textwhite}
+                >
+                  {/* </div> */}
+                  {/* <div>知識欲、決断力を満たしてくれる</div>
+                  <div>それが、白黒サイトです。</div> */}
+                  知識欲、決断力を満たしてくれる{" "}
+                </Typography>
+                <Typography
+                  align="left"
+                  variant="body1"
+                  className={styles.textwhite}
+                >
+                  それが、白黒サイトです。
+                </Typography>
+              </Paper>
+            </Grid>
+            <Grid item xs={12} alignItems="center">
+              <Paper elevation={0} className={styles.paperwhitecenter}>
+                <img src="concept-image3.png" alt="" className={styles.image} />
+              </Paper>
+            </Grid>
+            {/* <Box
+              sx={{
+                height: 300,
+              }}
+              className={styles.itemcenter}
+            >
+              <img
+                src="concept-image3.png"
+                alt=""
+                className={styles.itemcenter}
+              />
+            </Box> */}
+          </Grid>
         </SwiperSlide>{" "}
         <SwiperSlide>
           <Box

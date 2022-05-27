@@ -117,9 +117,34 @@
 
 .textwhite {
   color: white;
-  text-align: center;
+  padding: 10px;
+  /* text-align: center; */
 }
 
 .textblack {
   text-align: center;
+}
+
+.image {
+  text-align: center;
+}
+
+.itemcenter {
+  justify-self: auto;
+}
+
+.paperwhite {
+  background: white;
+  padding: 30px;
+}
+
+.paperwhitecenter {
+  background: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.paperblack {
+  background: black;
+  padding: 40px;
 }
