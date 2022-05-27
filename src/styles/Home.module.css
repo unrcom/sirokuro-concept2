@@ -140,11 +140,17 @@
 
 .paperwhitecenter {
   background: white;
-  padding: 30px;
+  padding: 2px;
   text-align: center;
 }
 
 .paperblack {
   background: black;
   padding: 40px;
+}
+
+.boxblack {
+  background: black;
+  padding: 20px;
+  margin: 20px;
 }
