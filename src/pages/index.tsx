@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+// import Image from "next/image";
 
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.css";
 
 import Box from "@mui/material/Box";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+// import CardMedia from "@mui/material/CardMedia";
 import { Typography } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Paper } from "@mui/material";
@@ -28,10 +28,6 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         {/* <main> */}
         <Swiper
-          style={{
-            "--swiper-navigation-color": "#000",
-            "--swiper-pagination-color": "#000",
-          }}
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
