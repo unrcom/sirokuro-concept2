@@ -163,8 +163,19 @@ const Home: NextPage = () => {
               </Grid>
               <Grid item xs={12} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
-                  <div className={styles.resizeimage}>
+                  {/* <div className={styles.resizeimage}>
                     <img src="parts-02.svg" alt="" className={styles.image} />
+                  </div> */}
+
+                  <div className={styles.resizeimage75}>
+                    <picture>
+                      <source
+                        media="(max-width: 560px)"
+                        srcSet="image2233-2.png"
+                        className={styles.resizeimage}
+                      ></source>
+                      <img src="parts-02.svg" />
+                    </picture>
                   </div>
                 </Paper>
               </Grid>
