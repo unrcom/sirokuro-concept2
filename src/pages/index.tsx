@@ -393,7 +393,7 @@ const Home: NextPage = () => {
                     variant="h6"
                     className={styles.textwhiteP20}
                   >
-                    七夕 (2022年7月7日)
+                    2022年7月7日（七夕）
                   </Typography>
                   <Typography
                     align="center"
@@ -402,7 +402,13 @@ const Home: NextPage = () => {
                   >
                     サービス開始予定
                   </Typography>
-                  \{" "}
+                  <Typography
+                    align="center"
+                    variant="h6"
+                    className={styles.textwhiteP20}
+                  >
+                    「短冊に願いを！」
+                  </Typography>
                 </Box>
               </CardContent>
             </Card>
