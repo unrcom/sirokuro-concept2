@@ -95,8 +95,10 @@ const Home: NextPage = () => {
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Grid container spacing={1}>
+            <Grid container spacing={0}>
               <Grid item xs={12} alignItems="center">
+                {/* <Card>
+              <CardContent> */}
                 <Box className={styles.boxblack}>
                   <Typography
                     align="center"
@@ -106,6 +108,8 @@ const Home: NextPage = () => {
                     まずはじめに
                   </Typography>
                 </Box>
+                {/* </CardContent>
+            </Card> */}
               </Grid>
               <Grid item xs={12} alignItems="center">
                 <div className={styles.resizeimage75}>
@@ -117,7 +121,7 @@ const Home: NextPage = () => {
                 </div>
               </Grid>
               <Grid item xs={12} alignItems="center">
-                <Box className={styles.boxblack}>
+                <Box className={styles.boxblackmargin40}>
                   {/* <Paper elevation={0} className={styles.paperblack}> */}
                   <Typography
                     align="left"
@@ -139,7 +143,7 @@ const Home: NextPage = () => {
             </Grid>
           </SwiperSlide>
           <SwiperSlide>
-            <Grid container spacing={1}>
+            <Grid container spacing={0}>
               <Grid item xs={12} alignItems="center">
                 <Box className={styles.boxblack}>
                   <Typography
@@ -159,7 +163,7 @@ const Home: NextPage = () => {
                 </Paper>
               </Grid>
               <Grid item xs={12} alignItems="center">
-                <Box className={styles.boxblack}>
+                <Box className={styles.boxblackmargin40}>
                   {/* <Paper elevation={0} className={styles.paperblack}> */}
                   <Typography
                     align="left"
@@ -205,7 +209,7 @@ const Home: NextPage = () => {
               </Grid>
             </Grid>
             <Grid item xs={12} alignItems="center">
-              <Box className={styles.boxblack}>
+              <Box className={styles.boxblackmargin40}>
                 {/* <Paper elevation={0} className={styles.paperblack}> */}
                 <Typography
                   align="left"
@@ -279,7 +283,7 @@ const Home: NextPage = () => {
               </Grid>
               <Grid item xs={12} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
-                  <div className={styles.resizeimage}>
+                  <div className={styles.resizeimage600}>
                     {/* <img src="TOP.svg" alt="" className={styles.image} /> */}
                     <img src="TOP.svg" />
                   </div>
@@ -324,7 +328,7 @@ const Home: NextPage = () => {
               </Grid>
               <Grid item xs={12} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
-                  <div className={styles.resizeimage}>
+                  <div className={styles.resizeimage400}>
                     <img src="shosai.png" alt="" className={styles.image} />
                   </div>
                 </Paper>
@@ -407,7 +411,7 @@ const Home: NextPage = () => {
                     variant="h6"
                     className={styles.textwhiteP20}
                   >
-                    「短冊に願いを！」
+                    「白黒星に願いを！」
                   </Typography>
                 </Box>
               </CardContent>
