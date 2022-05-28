@@ -388,20 +388,24 @@ const Home: NextPage = () => {
                 </Box>
               </Grid>
             </Grid> */}
-            <Card>
-              <CardContent>
+            <Grid container spacing={0}>
+              {/* <Card>
+              <CardContent> */}
+              <Grid item xs={12} alignItems="center">
                 <Typography
                   align="center"
                   variant="h5"
-                  className={styles.textblackP30}
+                  className={styles.textblackP303}
                 >
                   comming soon
                 </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Box className={styles.boxblack}>
+              </Grid>
+              {/* </CardContent>
+            </Card> */}
+              <Grid item xs={12} alignItems="center">
+                {/* <Card>
+                <CardContent> */}
+                <Box className={styles.boxblackmargin40}>
                   <Typography
                     align="center"
                     variant="h6"
@@ -424,8 +428,10 @@ const Home: NextPage = () => {
                     「白黒星に願いを！」
                   </Typography>
                 </Box>
-              </CardContent>
-            </Card>
+                {/* </CardContent>
+              </Card> */}
+              </Grid>
+            </Grid>
           </SwiperSlide>
         </Swiper>
       </main>
