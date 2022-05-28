@@ -47,8 +47,10 @@ const Home: NextPage = () => {
           speed={500}
         >
           <SwiperSlide>
-            <Card>
-              <CardContent>
+            <Grid container spacing={0}>
+              <Grid item xs={12} alignItems="center">
+                {/* <Card>
+              <CardContent> */}
                 <Typography
                   align="center"
                   variant="h5"
@@ -64,11 +66,13 @@ const Home: NextPage = () => {
                 >
                   sirokuro[CONCEPT].site
                 </Typography>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent>
-                <Box className={styles.boxblack}>
+                {/* </CardContent>
+            </Card> */}
+              </Grid>
+              <Grid item xs={12} alignItems="center">
+                {/* <Card>
+                <CardContent> */}
+                <Box className={styles.boxblackmargin40}>
                   <Typography
                     align="center"
                     variant="h6"
@@ -91,8 +95,10 @@ const Home: NextPage = () => {
                     サイトへ
                   </Typography>
                 </Box>
-              </CardContent>
-            </Card>
+                {/* </CardContent>
+              </Card> */}
+              </Grid>
+            </Grid>{" "}
           </SwiperSlide>
           <SwiperSlide>
             <Grid container spacing={0}>
@@ -247,9 +253,9 @@ const Home: NextPage = () => {
             </Grid>
           </SwiperSlide>{" "}
           <SwiperSlide>
-            <Grid container spacing={1}>
+            <Grid container spacing={0}>
               <Grid item xs={12} alignItems="center">
-                <Box className={styles.boxblack10}>
+                <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -260,7 +266,7 @@ const Home: NextPage = () => {
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Box className={styles.boxblack10}>
+                <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -271,7 +277,7 @@ const Home: NextPage = () => {
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Box className={styles.boxblack10}>
+                <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -292,9 +298,9 @@ const Home: NextPage = () => {
             </Grid>
           </SwiperSlide>
           <SwiperSlide>
-            <Grid container spacing={1}>
+            <Grid container spacing={0}>
               <Grid item xs={12} alignItems="center">
-                <Box className={styles.boxblack10}>
+                <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -305,7 +311,7 @@ const Home: NextPage = () => {
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Box className={styles.boxblack10}>
+                <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -316,7 +322,7 @@ const Home: NextPage = () => {
                 </Box>
               </Grid>
               <Grid item xs={12} sm={6} alignItems="center">
-                <Box className={styles.boxblack10}>
+                <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
                     variant="h5"
@@ -378,13 +384,6 @@ const Home: NextPage = () => {
                   variant="h5"
                   className={styles.textblackP30}
                 >
-                  　
-                </Typography>
-                <Typography
-                  align="center"
-                  variant="h5"
-                  className={styles.textblackP30}
-                >
                   comming soon
                 </Typography>
               </CardContent>
@@ -397,7 +396,7 @@ const Home: NextPage = () => {
                     variant="h6"
                     className={styles.textwhiteP20}
                   >
-                    2022年7月7日（七夕）
+                    2022年7月7日
                   </Typography>
                   <Typography
                     align="center"

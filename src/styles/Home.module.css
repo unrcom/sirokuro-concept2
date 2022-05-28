@@ -125,7 +125,7 @@
 .textwhiteP20 {
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 .textblack {
@@ -177,10 +177,10 @@
   margin: 40px;
 }
 
-.boxblack10 {
+.boxblack5 {
   background: black;
   padding: 10px;
-  margin: 0px;
+  margin: 5px;
 }
 
 .resizeimage {
@@ -211,6 +211,7 @@
 
 .resizeimage400 {
   text-align: center;
+  margin-top: 20px;
 }
 
 .resizeimage400 img {
@@ -220,6 +221,7 @@
 
 .resizeimage600 {
   text-align: center;
+  margin-top: 20px;
 }
 
 .resizeimage600 img {
@@ -229,7 +231,7 @@
 
 .textblackP30 {
   text-align: center;
-  padding: 30px;
+  padding: 50px;
 }
 
 .margin20 {
