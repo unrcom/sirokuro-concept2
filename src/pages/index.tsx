@@ -4,10 +4,6 @@ import Image from "next/image";
 
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 import styles from "../styles/Home.module.css";
 
@@ -32,14 +28,19 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         {/* <main> */}
         <Swiper
+          style={{
+            "--swiper-navigation-color": "#000",
+            "--swiper-pagination-color": "#000",
+          }}
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={50}
           slidesPerView={1}
-          navigation
+          navigation={true}
+          // navigation={{ nextEl: ".swiper-button-next" }}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
+          // onSlideChange={() => console.log("slide change")}
           // autoplay={{
           //   delay: 5000,
           //   disableOnInteraction: true,
@@ -49,8 +50,6 @@ const Home: NextPage = () => {
           // loopAdditionalSlides={1}
           speed={500}
         >
-          {/* {items.map((banneritem, index) => { */}
-          {/* <div class="swiper-button-prev swiper-button-black"> */}
           <SwiperSlide>
             <Card>
               <CardContent>
@@ -100,10 +99,8 @@ const Home: NextPage = () => {
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            {/* <Grid container spacing={1}> */}
-            {/* <Grid item xs={12} alignItems="center"> */}
-            <Card>
-              <CardContent>
+            <Grid container spacing={1}>
+              <Grid item xs={12} alignItems="center">
                 <Box className={styles.boxblack}>
                   <Typography
                     align="center"
@@ -113,42 +110,37 @@ const Home: NextPage = () => {
                     まずはじめに
                   </Typography>
                 </Box>
-              </CardContent>
-            </Card>
-            {/* </Grid> */}
-            {/* <Grid item xs={12} md={6} alignItems="center"> */}
-            <Card className={styles.image}>
-              <CardContent>
-                {/* <Paper elevation={0} className={styles.paperwhitecenter}> */}
+              </Grid>
+              <Grid item xs={12} alignItems="center">
                 <div className={styles.resizeimage75}>
-                  {/* <img src="parts-01.svg" alt="" className={styles.image40} /> */}
-                  <img src="parts-01.svg" />
+                  {/* <img src="parts-01.svg" /> */}
+                  <picture>
+                    <source media="(max-width: 560px)" srcSet="parts-04.svg" />
+                    <img src="parts-01.svg" />
+                  </picture>
                 </div>
-                {/* </Paper> */}
-              </CardContent>
-            </Card>
-            {/* </Grid> */}
-            <Grid item xs={12} alignItems="center">
-              <Box className={styles.boxblack}>
-                {/* <Paper elevation={0} className={styles.paperblack}> */}
-                <Typography
-                  align="left"
-                  variant="body1"
-                  className={styles.textwhite}
-                >
-                  物を買う時はもちろん、自分の意見は少数派なのか多数派なのか、何かを決断する時、知りたくなるはずです。
-                </Typography>
-                <Typography
-                  align="left"
-                  variant="body1"
-                  className={styles.textwhite}
-                >
-                  リモートでの活動が多くなった時代に「誰かに聞きたい!」欲求を満たすことのできたらというのが、このサイトの企画の発端です。
-                </Typography>
-                {/* </Paper> */}
-              </Box>
+              </Grid>
+              <Grid item xs={12} alignItems="center">
+                <Box className={styles.boxblack}>
+                  {/* <Paper elevation={0} className={styles.paperblack}> */}
+                  <Typography
+                    align="left"
+                    variant="body1"
+                    className={styles.textwhite}
+                  >
+                    物を買う時はもちろん、自分の意見は少数派なのか多数派なのか、何かを決断する時、知りたくなるはずです。
+                  </Typography>
+                  <Typography
+                    align="left"
+                    variant="body1"
+                    className={styles.textwhite}
+                  >
+                    リモートでの活動が多くなった時代に「誰かに聞きたい!」欲求を満たすことのできたらというのが、このサイトの企画の発端です。
+                  </Typography>
+                  {/* </Paper> */}
+                </Box>
+              </Grid>
             </Grid>
-            {/* </Grid> */}
           </SwiperSlide>
           <SwiperSlide>
             <Grid container spacing={1}>
@@ -210,7 +202,8 @@ const Home: NextPage = () => {
               <Grid item xs={12} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
                   <div className={styles.resizeimage40}>
-                    <img src="parts-03.svg" alt="" className={styles.image} />
+                    {/* <img src="parts-03.svg" alt="" className={styles.image} /> */}
+                    <img src="parts-03.svg" alt="" />
                   </div>
                 </Paper>
               </Grid>
@@ -291,7 +284,8 @@ const Home: NextPage = () => {
               <Grid item xs={12} alignItems="center">
                 <Paper elevation={0} className={styles.paperwhitecenter}>
                   <div className={styles.resizeimage}>
-                    <img src="TOP.svg" alt="" className={styles.image} />
+                    {/* <img src="TOP.svg" alt="" className={styles.image} /> */}
+                    <img src="TOP.svg" />
                   </div>
                 </Paper>
               </Grid>
@@ -342,7 +336,7 @@ const Home: NextPage = () => {
             </Grid>
           </SwiperSlide>
           <SwiperSlide>
-            <Grid container spacing={1}>
+            {/* <Grid container spacing={1}>
               <Grid item xs={12} alignItems="center">
                 <Box className={styles.boxblack10}>
                   <Typography
@@ -376,9 +370,47 @@ const Home: NextPage = () => {
                   </Typography>
                 </Box>
               </Grid>
-            </Grid>
-          </SwiperSlide>{" "}
-          {/* </div> */}
+            </Grid> */}
+            <Card>
+              <CardContent>
+                <Typography
+                  align="center"
+                  variant="h5"
+                  className={styles.textblackP30}
+                >
+                  　
+                </Typography>
+                <Typography
+                  align="center"
+                  variant="h5"
+                  className={styles.textblackP30}
+                >
+                  comming soon
+                </Typography>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent>
+                <Box className={styles.boxblack}>
+                  <Typography
+                    align="center"
+                    variant="h6"
+                    className={styles.textwhiteP20}
+                  >
+                    七夕 (2022年7月7日)
+                  </Typography>
+                  <Typography
+                    align="center"
+                    variant="h6"
+                    className={styles.textwhiteP20}
+                  >
+                    サービス開始予定
+                  </Typography>
+                  \{" "}
+                </Box>
+              </CardContent>
+            </Card>
+          </SwiperSlide>
         </Swiper>
       </main>
       <footer className={styles.footer}>

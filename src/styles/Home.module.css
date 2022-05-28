@@ -177,18 +177,19 @@
 }
 
 .resizeimage75 {
-  width: 75vw;
   text-align: center;
 }
 
 .resizeimage75 img {
   width: 75vw;
+}
+
+.resizeimage40 {
   text-align: center;
 }
 
 .resizeimage40 img {
   width: 40vw;
-  /* text-align: center; */
 }
 
 .textblackP30 {
@@ -200,4 +201,9 @@
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+.swiper-button-next {
+  /* background-image: none; */
+  color: deeppink;
 }
