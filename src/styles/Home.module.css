@@ -125,7 +125,21 @@
 .textwhiteP20 {
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 10px;
+}
+
+.textwhiteP201 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.textwhiteP202 {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .textblack {
@@ -231,9 +245,22 @@
 
 .textblackP30 {
   text-align: center;
-  padding: 50px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-top: 40px;
 }
 
+.textblackP301 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.textblackP302 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
 .margin20 {
   margin: 20px;
   margin-right: 100px;

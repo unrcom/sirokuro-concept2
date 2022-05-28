@@ -54,14 +54,14 @@ const Home: NextPage = () => {
                 <Typography
                   align="center"
                   variant="h5"
-                  className={styles.textblackP30}
+                  className={styles.textblackP301}
                 >
                   welcome to
                 </Typography>
                 <Typography
                   align="center"
                   variant="h5"
-                  className={styles.textblackP30}
+                  className={styles.textblackP302}
                   // gutterBottom
                 >
                   sirokuro[CONCEPT].site
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
                   <Typography
                     align="center"
                     variant="h6"
-                    className={styles.textwhiteP20}
+                    className={styles.textwhiteP201}
                   >
                     ようこそ
                   </Typography>
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
                   <Typography
                     align="center"
                     variant="h6"
-                    className={styles.textwhiteP20}
+                    className={styles.textwhiteP202}
                   >
                     サイトへ
                   </Typography>
