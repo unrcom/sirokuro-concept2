@@ -131,14 +131,14 @@ const Home: NextPage = () => {
                   {/* <Paper elevation={0} className={styles.paperblack}> */}
                   <Typography
                     align="left"
-                    variant="body1"
+                    variant="body2"
                     className={styles.textwhite}
                   >
                     物を買う時はもちろん、自分の意見は少数派なのか多数派なのか、何かを決断する時、知りたくなるはずです。
                   </Typography>
                   <Typography
                     align="left"
-                    variant="body1"
+                    variant="body2"
                     className={styles.textwhite}
                   >
                     リモートでの活動が多くなった時代に「誰かに聞きたい!」欲求を満たすことのできたらというのが、このサイトの企画の発端です。
@@ -173,14 +173,14 @@ const Home: NextPage = () => {
                   {/* <Paper elevation={0} className={styles.paperblack}> */}
                   <Typography
                     align="left"
-                    variant="body1"
+                    variant="body2"
                     className={styles.textwhite}
                   >
                     人間は生活していく上で、「朝何を食べよう」から始まり、常に何かをセレクトしています。
                   </Typography>
                   <Typography
                     align="left"
-                    variant="body1"
+                    variant="body2"
                     className={styles.textwhite}
                   >
                     日々何かを決断しているワケですが、大きく分けて2属性あるのかなと思います。
@@ -219,7 +219,7 @@ const Home: NextPage = () => {
                 {/* <Paper elevation={0} className={styles.paperblack}> */}
                 <Typography
                   align="left"
-                  variant="body1"
+                  variant="body2"
                   className={styles.textwhite}
                 >
                   現在多くあるのが、商品購買やオークションなど「モノ」のサイト、
@@ -227,7 +227,7 @@ const Home: NextPage = () => {
                 </Typography>
                 <Typography
                   align="left"
-                  variant="body1"
+                  variant="body2"
                   className={styles.textwhite}
                 >
                   そこで、「コト」「モノ」にとらわれず全てのものを比較でき、
@@ -236,14 +236,14 @@ const Home: NextPage = () => {
                 </Typography>
                 <Typography
                   align="left"
-                  variant="body1"
+                  variant="body2"
                   className={styles.textwhite}
                 >
                   知識欲を満たし、決断力を強化できる{" "}
                 </Typography>
                 <Typography
                   align="left"
-                  variant="body1"
+                  variant="body2"
                   className={styles.textwhite}
                 >
                   それが、白黒サイトです。
@@ -258,7 +258,7 @@ const Home: NextPage = () => {
                 <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
-                    variant="h5"
+                    variant="h6"
                     className={styles.textwhite}
                   >
                     サイトイメージ
@@ -269,7 +269,7 @@ const Home: NextPage = () => {
                 <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
-                    variant="h5"
+                    variant="h6"
                     className={styles.textwhite}
                   >
                     投票詳細ページ
@@ -280,7 +280,7 @@ const Home: NextPage = () => {
                 <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
-                    variant="h5"
+                    variant="h6"
                     className={styles.textwhite}
                   >
                     トップページ
@@ -291,7 +291,7 @@ const Home: NextPage = () => {
                 <Paper elevation={0} className={styles.paperwhitecenter}>
                   <div className={styles.resizeimage600}>
                     {/* <img src="TOP.svg" alt="" className={styles.image} /> */}
-                    <img src="TOP.svg" />
+                    <img src="TOP.png" />
                   </div>
                 </Paper>
               </Grid>
@@ -303,7 +303,7 @@ const Home: NextPage = () => {
                 <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
-                    variant="h5"
+                    variant="h6"
                     className={styles.textwhite}
                   >
                     サイトイメージ
@@ -314,7 +314,7 @@ const Home: NextPage = () => {
                 <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
-                    variant="h5"
+                    variant="h6"
                     className={styles.textwhite}
                   >
                     投票詳細ページ
@@ -325,7 +325,7 @@ const Home: NextPage = () => {
                 <Box className={styles.boxblack5}>
                   <Typography
                     align="center"
-                    variant="h5"
+                    variant="h6"
                     className={styles.textwhite}
                   >
                     詳細ページ
