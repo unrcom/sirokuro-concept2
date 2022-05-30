@@ -410,23 +410,17 @@ const Home: NextPage = () => {
                     align="center"
                     variant="h6"
                     className={styles.textwhiteP20}
-                  >
-                    2022年7月7日
-                  </Typography>
+                  ></Typography>
                   <Typography
                     align="center"
                     variant="h6"
                     className={styles.textwhiteP20}
-                  >
-                    サービス開始予定
-                  </Typography>
+                  ></Typography>
                   <Typography
                     align="center"
                     variant="h6"
                     className={styles.textwhiteP20}
-                  >
-                    「白黒星に願いを！」
-                  </Typography>
+                  ></Typography>
                 </Box>
                 {/* </CardContent>
               </Card> */}
